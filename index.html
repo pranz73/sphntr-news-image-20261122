@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1024, initial-scale=1">
+<title>The World Ledger — Saturday, 22 November 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1024px; height: 1024px; overflow: hidden; }
+  body { background: #ded7c9; color: #202521; font-family: Georgia, 'Times New Roman', serif; }
+  .page { width: 1024px; height: 1024px; padding: 27px 38px 23px; background: #f8f4ea; position: relative; }
+  .topline { display:flex; justify-content:space-between; border-top:3px solid #222923; border-bottom:1px solid #8d8b7e; padding:7px 0 6px; font: 700 9px/1 Arial,sans-serif; letter-spacing:1.7px; text-transform:uppercase; color:#555b53; }
+  .masthead { display:flex; justify-content:space-between; align-items:center; padding:14px 0 12px; border-bottom:5px double #252c27; }
+  .brand { font-size:59px; font-weight:700; letter-spacing:-3.4px; line-height:.9; }
+  .brand small { display:block; margin-top:9px; font:700 9px/1 Arial,sans-serif; letter-spacing:3.2px; text-transform:uppercase; color:#60645a; }
+  .issue { text-align:right; font:700 11px/1.55 Arial,sans-serif; letter-spacing:1px; text-transform:uppercase; }
+  .issue strong { display:block; font:italic 19px/1.2 Georgia,serif; letter-spacing:0; text-transform:none; }
+  .edition { background:#bd3c2c; color:#fffaf0; padding:5px 8px; display:inline-block; margin-top:4px; font-size:9px; letter-spacing:1.5px; }
+  .lead { display:grid; grid-template-columns:1.12fr .88fr; gap:23px; padding:20px 0 18px; border-bottom:2px solid #252c27; }
+  .lead > div:first-child { border-left:4px solid #a13d2f; padding:2px 0 0 15px; }
+  .kicker { font:700 10px/1 Arial,sans-serif; letter-spacing:2.1px; text-transform:uppercase; color:#a13d2f; }
+  h1 { font-size:43px; line-height:.98; letter-spacing:-1.9px; margin:9px 0 11px; }
+  .deck { font-size:15px; line-height:1.42; margin:0; max-width:490px; }
+  .byline { font:700 9px/1 Arial,sans-serif; text-transform:uppercase; letter-spacing:1.2px; margin-top:12px; color:#555b53; }
+  .art { height:204px; background:#d5dfd1; position:relative; overflow:hidden; border:1px solid #7c897a; box-shadow:5px 5px 0 #e4ddcf; }
+  .art svg { display:block; width:100%; height:100%; }
+  .art-caption { position:absolute; bottom:12px; left:9px; color:#f7f1e5; font:700 8px Arial,sans-serif; letter-spacing:1px; text-transform:uppercase; text-shadow:0 1px 3px #152820; }
+  .section-head { display:flex; align-items:center; gap:10px; margin:14px 0 2px; font:700 10px Arial,sans-serif; letter-spacing:2.2px; text-transform:uppercase; color:#444b44; }
+  .section-head:after { content:''; height:2px; background:#252c27; flex:1; }
+  .briefs { display:grid; grid-template-columns:repeat(3,1fr); column-gap:0; row-gap:0; border-top:1px solid #aaa596; }
+  .story { padding:13px 15px 12px 0; min-height:125px; border-bottom:1px solid #bdb8ab; }
+  .story:not(:nth-child(3n+1)) { border-left:1px solid #bdb8ab; padding-left:15px; }
+  .story:nth-child(n+4) { min-height:118px; }
+  .tag { font:700 8px/1 Arial,sans-serif; text-transform:uppercase; letter-spacing:1.5px; color:#9d3d31; }
+  .story h2 { font-size:18px; line-height:1.04; letter-spacing:-.45px; margin:6px 0 6px; }
+  .story p { font-size:11px; line-height:1.38; margin:0; color:#454941; }
+  .bottom { display:grid; grid-template-columns:1.55fr 1fr; gap:18px; margin-top:15px; }
+  .markets { background:#252e2b; color:#f7f1e5; padding:11px 14px 10px; border-top:3px solid #bd533d; }
+  .bottom-label { font:700 9px Arial,sans-serif; letter-spacing:1.8px; text-transform:uppercase; color:#e3a075; }
+  .marketline { display:flex; align-items:baseline; justify-content:space-between; margin-top:5px; }
+  .index { font:700 14px Arial,sans-serif; letter-spacing:.5px; }
+  .change { color:#f18c70; font:700 24px Arial,sans-serif; }
+  .market-note { margin-top:3px; font:10px/1.25 Arial,sans-serif; color:#d9ded5; }
+  .sports { border:1px solid #252e2b; border-top:3px solid #252e2b; padding:9px 12px 10px; background:#f1ecdf; }
+  .sports .bottom-label { color:#9d3d31; }
+  .sports p { font-size:10.5px; line-height:1.34; margin:6px 0 0; }
+  .sports strong { font-size:12px; }
+  footer { display:flex; justify-content:space-between; border-top:2px solid #252c27; margin-top:14px; padding-top:7px; font:700 8px Arial,sans-serif; letter-spacing:1.4px; text-transform:uppercase; color:#62665c; }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="topline"><span>Independent world dispatch</span><span>Global edition&nbsp; · &nbsp;No. 326</span></div>
+  <header class="masthead">
+    <div class="brand">The World Ledger<small>Clarity in a crowded world</small></div>
+    <div class="issue"><strong>Saturday, 22 November 2026</strong>One day. A changing world.<br><span class="edition">THE WEEKEND EDITION</span></div>
+  </header>
+  <section class="lead">
+    <div>
+      <div class="kicker">Climate · Antalya, Türkiye</div>
+      <h1>Antalya summit ends without a climate deal</h1>
+      <p class="deck">COP31 closes after late-night talks collapse, leaving nations divided on fossil fuels and climate finance. Delegates depart with pledges to keep negotiating—and no shared path forward.</p>
+      <div class="byline">By the World Ledger desk &nbsp; / &nbsp; Antalya</div>
+    </div>
+    <div class="art">
+      <svg viewBox="0 0 420 188" xmlns="http://www.w3.org/2000/svg" aria-label="Sun setting over a coastal summit city">
+        <rect width="420" height="188" fill="#81978d"/><rect y="103" width="420" height="85" fill="#466c69"/>
+        <circle cx="304" cy="56" r="31" fill="#e6ae72"/><path d="M0 109 Q55 88 109 108 T218 104 T327 106 T420 99 V132 H0Z" fill="#b99472"/>
+        <path d="M0 125 Q70 114 135 127 T270 121 T420 124 V188 H0Z" fill="#355d5b"/>
+        <path d="M29 119 L42 73 55 119M57 118 L73 61 91 119M89 119 L102 81 114 119M322 116 L339 54 359 117M353 117 L371 72 386 117" fill="#3f5349"/>
+        <path d="M0 143 Q90 134 170 144 T340 141 T420 145" fill="none" stroke="#d3b48d" stroke-width="2" opacity=".6"/>
+        <g fill="#f2e8d3"><path d="M179 93h59v31h-59z"/><path d="M188 82h42v11h-42z"/><path d="M197 75h24v7h-24z"/></g>
+        <g stroke="#f2e8d3" stroke-width="2"><path d="M188 99v22m12-22v22m12-22v22m12-22v22"/></g>
+        <path d="M171 95h75" stroke="#b94b38" stroke-width="3"/>
+      </svg>
+      <div class="art-caption">Delegates leave Antalya as talks stall</div>
+    </div>
+  </section>
+  <div class="section-head">Across the world</div>
+  <section class="briefs">
+    <article class="story"><div class="tag">Mediterranean · Security</div><h2>Russian corvette sunk in Benghazi port</h2><p>The Merkury went down at its berth; a Ukrainian sea-drone strike is suspected, with Moscow yet to confirm the cause.</p></article>
+    <article class="story"><div class="tag">Gulf · Escalation</div><h2>Tankers burn near Hormuz; Bahrain site hit</h2><p>Two vessels caught fire near the strait as a separate strike hit an industrial facility in Sitra.</p></article>
+    <article class="story"><div class="tag">Ukraine · War</div><h2>At least ten killed in strike on Dymer</h2><p>A Russian attack hit the town north of Kyiv, emergency crews said, as rescuers searched damaged homes.</p></article>
+    <article class="story"><div class="tag">United States · Congress</div><h2>Democrats win biggest House edge since 1992</h2><p>The party secured its largest majority in more than three decades, reshaping the balance of power in Washington.</p></article>
+    <article class="story"><div class="tag">The Hague · Justice</div><h2>World court finds Myanmar committed genocide</h2><p>The ICJ ruled that Myanmar committed genocide against the Rohingya, in a landmark judgment on state responsibility.</p></article>
+    <article class="story"><div class="tag">Israel · West Bank</div><h2>Eisenkot condemns settler attacks</h2><p>The Israeli opposition figure denounced violence against Palestinians in the occupied West Bank and urged action.</p></article>
+  </section>
+  <section class="bottom">
+    <div class="markets"><div class="bottom-label">Markets · Tokyo close</div><div class="marketline"><span class="index">NIKKEI 225</span><span class="change">−5.06%</span></div><div class="market-note">AI shares lead sell-off as investors reassess the sector’s heady valuations.</div></div>
+    <div class="sports"><div class="bottom-label">The sports corner</div><p><strong>Alcaraz takes ATP Finals</strong> · The Spaniard claims the season-ending crown.</p><p><strong>Thitikul makes it three straight</strong> · The Thai star wins her third consecutive LPGA title.</p></div>
+  </section>
+  <footer><span>News for a world in motion</span><span>Printed for Saturday · 22.11.26</span><span>1 / 1</span></footer>
+</main>
+</body>
+</html>
